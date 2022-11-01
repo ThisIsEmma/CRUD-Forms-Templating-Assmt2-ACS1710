@@ -5,11 +5,14 @@
     </head>
     <body>
         <!-- Your HTML code goes here! -->
-
-
-
-
-
-        
+        {% if operation == 'add'%}
+        <p>add {{operand1}} and {{operand2}} result is: {{operand1 + operand2}}</p>
+        {% elif operation == 'multiply' %}
+        <p>multiply {{operand1}} and {{operand2}} result is: {{operand1 * operand2}}</p>
+        {% elif operation == 'subtract' %}
+        <p>subtract {{operand1}} and {{operand2}} result is: {{operand1 - operand2}}</p>
+        {% elif operation == 'divide' %}
+        <p>divide {{operand1}} and {{operand2}} result is: {{operand1 / operand2}}</p>
+        {% endif %}
     </body>
 </html>
