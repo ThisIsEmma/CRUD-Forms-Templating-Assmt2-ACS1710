@@ -1,5 +1,6 @@
 from flask import Flask, request, render_template
 import random
+#Start code: 
 
 app = Flask(__name__)
 
